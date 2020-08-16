@@ -5,7 +5,7 @@
 <!-- 配置文件的根元素 -->
 <mapper namespace="com.gfpz.springcloud.dao.DeptDao">
     <insert id="addDept" parameterType="Dept">
-        insert into dept (dname,db_source) values (#{dname},ATABASE())
+        insert into dept (dname,db_source) values (#{dname},DATABASE())
     </insert>
 
     <select id="queryById" resultType="Dept" parameterType="Long">

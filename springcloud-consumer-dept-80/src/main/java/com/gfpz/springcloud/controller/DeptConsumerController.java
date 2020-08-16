@@ -17,7 +17,9 @@ public class DeptConsumerController {
     @Autowired
     private RestTemplate restTemplate;//提供多种便捷访问远程http服务的方法，简单的restful服务模板
 
-    private static final String REST_URL_PREFIX = "http://localhost:8001";
+//    private static final String REST_URL_PREFIX = "http://localhost:8001";
+    //ribbon去实现时 地址应该是个变量  通过服务名访问
+    private static final String REST_URL_PREFIX = "http://SPRINGCLOUD-PROVIDER-DEPT";
 
     @RequestMapping("/consumer/dept/get/{id}")
     public Dept get(@PathVariable("id") Long id){
