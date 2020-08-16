@@ -13,10 +13,15 @@
 
     <!--父工程里边的依赖只是管理，使用还得来这里添加-->
     <dependencies>
-
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
+        </dependency>
+        <!--feign-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-feign</artifactId>
+            <version>1.4.7.RELEASE</version>
         </dependency>
     </dependencies>
 
