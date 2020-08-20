@@ -28,3 +28,4 @@ eureka:
 info:
   app.name: gfpz-springcloud
   company.name: possible2dream.cn
+

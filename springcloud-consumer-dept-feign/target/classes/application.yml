@@ -1,6 +1,11 @@
 server:
   port: 80
 
+#开启降级feign.hystrix
+feign:
+  hystrix:
+    enabled: true
+
 eureka:
   client:
     register-with-eureka: false #laozi不是要去向eureka中注册自己
